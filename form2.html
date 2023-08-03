@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100 tracking-wider"> 
+    <div class="w-full  flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
+      <div class="w-full lg:w-1/5 text-xl ">
+        <!------------------navbar----------------------->
+        <div class="w-full sticky inset-0 hidden max-h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 my-2 lg:my-0 border border-gray-400 lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent ">
+          <ul class=" text-right navbar">
+            <li class="py-1 md:my-2 ">
+              <a href='#section1' class="block no-underline ">
+                <span class="pb-1 md:pb-0 text-lg active">معلومات المؤسسة</span>
+              </a>
+            </li>
+            <li class="py-1 md:my-2 ">
+              <a href='#section2' class="block  no-underline ">
+                <span class="pb-1 md:pb-0 text-lg">الأفواج</span>
+              </a>
+            </li>
+            <li class="py-1 md:my-2 ">
+              <a href='#section3' class="block no-underline ">
+                <span class="pb-1 md:pb-0 text-lg">الأساتذة</span>
+              </a>
+            </li>
+            <li class="py-1 md:my-2 ">
+              <a href='#section4' class="block no-underline ">
+                <span class="pb-1 md:pb-0 text-lg">الاسناد</span>
+              </a>
+            </li> 
+          </ul>
+        </div>
+      </div>
+
+      <section class="w-full lg:pl-2 lg:w-4/5">
+        <!------------------section 1----------------------->
+        <section id="section1">
+          <h2 class="font-sans font-bold  text-right px-2 pb-8 text-2xl">معلومات المؤسسة</h2>
+          <div class="p-8 mt-6 ml-8 lg:mt-0 text-right rounded shadow  bg-white">
+            <forom class="my-10 mx-10  grid gap-y-10 grid-rows-2  relative form1">
+            <div class="lg:flex lg:flex-row-reverse  md:grid md:grid-rows-2 md:place-items-end lg:gap-6 md:gap-6 ">
+              <span class="details text-lg">:اسم المؤسسة </span>
+              <input class="input" type="text" placeholder= "ادخل اسم المؤسسة"  required>
+              <span class="details text-lg">:العنوان(البلدية / الولاية)  </span>
+              <input class="input"type="text" placeholder="ادخل اسم الولاية" required>
+            </div>
+            <div class="lg:flex flex-row-reverse  md:grid md:grid-rows-2 md:place-items-end lg:gap-12 md:gap-6 ">
+              <span class="details text-lg"> :رقم الهاتف </span>
+              <input class="input" type="tel" placeholder="ادخل رقم هاتفك" required>
+              <span class="details text-lg relative left-5 md:left-0">:البريد الالكتروني </span>
+              <input class="input" type="email" placeholder="ادخل بريدك الالكتروني" required>
+            </div>
+            </form>
+          </div>
+        </section>
+        <!------------------section 2----------------------->
+        <section id="section2">
+          <hr class="border-green-300 my-12">
+          <h2 class="font-sans font-bold  text-right px-2 pb-8 text-2xl">الأفواج</h2>
+          <div class="p-8 mt-6  ml-8 lg:mt-0 rounded shadow  bg-white">
+            <forom class="my-10 mx-10  grid gap-y-10 grid-rows-2 relative form4">
+            <div class="flex flex-row-reverse gap-10">
+              <span class="details text-lg">:عدد افواج السنة الأولى </span>
+              <div class="container relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box1" id="box1">
+                  <span>0</span>
+                </div>
+              </div>
+              <span class="details text-lg">:عدد افواج السنة الثانية </span>
+              <div class="container relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box2" id="box2">
+                  <span>0</span>
+                </div>
+              </div>          
+            </div>
+            <div class="flex flex-row-reverse gap-10">
+              <span class="details text-lg">:عدد افواج السنة الثالثة </span>
+              <div class="container relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box3" id="box3">
+                  <span>0</span>
+                </div>
+              </div>
+              <span class="details text-lg">:عدد افواج السنة الرابعة </span>
+              <div class="container relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box4" id="box4">
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+            </form>
+          </div>
+        </section>
+        <!------------------section 3----------------------->
+        <section id="section3">
+          <hr class="border-green-300 my-12">
+          <h2 class="font-sans font-bold  text-right px-2 pb-8 text-2xl">الأساتذة</h2>
+          <div class="p-8 mt-6 ml-8 lg:mt-0 text-right rounded shadow  bg-white">
+            <form class="my-10 mx-10 lg:my-5 lg:mx-5 grid gap-y-12 grid-rows-2 relative right-5 form3">
+              <div class="flex flex-row-reverse gap-12">
+                <div>
+                  <span class="details inline">:اللغة العربية</span>
+                  <img src="img/arabe.png"class="relative w-10 h-10  inline bottom-4 left-2" alt="">
+                </div>
+                <input type="number"class="relative left-4" id="quantity" name="quantity" min="1" max="10">
+                <div>
+                  <span class="details">:الرياضيات</span>
+                  <img src="img/math.png"class="relative w-10 h-10 inline bottom-4 left-2" alt="">
+                </div>
+                <input type="number" id="quantity" class="relative right-6" name="quantity" min="1" max="10">
+                <div class="relative right-7">
+                  <span class="details">:اللغة الفرنسية</span>
+                  <img src="img/fran.png"class="relative w-10 h-10 inline bottom-4 left-2" alt="">
+                </div>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+              </div>
+              <div class="flex flex-row-reverse gap-9">
+                <div>
+                  <span class="details">:اللغة الإنجليزية</span>
+                  <img src="img/eng.png"class="relative w-10 h-10 inline bottom-4 left-2" alt="">
+                </div>
+                <input type="number" class="relative left-6" id="quantity" name="quantity" min="1" max="10">
+                <div>
+                  <span class="details">:العلوم الفيزيائية</span>
+                  <img src="img/physi.png"class="relative w-10 h-10 inline bottom-4 left-2" alt="">
+                </div>
+                <input type="number"class="relative left-4" id="quantity" name="quantity" min="1" max="10">
+                <div>
+                  <span class="details">:علوم الطبيعة والحياة</span>
+                  <img src="img/science.png"class="relative w-10 h-10 inline bottom-4 left-2" alt="">
+                </div>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+              </div>
+              <div class="flex flex-row-reverse gap-9">
+                <div>
+                  <span class="details">:اجتماعيات</span>
+                  <img src="img/hisgeo.png"class="relative w-10 h-10 inline bottom-4 left-2" alt="">
+                </div>
+                <input type="number"id="quantity" class="relative right-4" name="quantity" min="1" max="10">
+                <div class="relative right-8">
+                  <span class="details">:التربية البدنية</span>
+                  <img src="img/sport.png"class="relative w-10 h-10 inline bottom-4 left-2" alt="">
+                </div>
+                <input type="number" class="relative right-12" id="quantity" name="quantity" min="1" max="10">
+                <div class="relative right-16">
+                  <span class="details">:الاعلام الالي</span>
+                  <img src="img/info.png "class="relative w-10 h-10 inline bottom-4 left-2" alt="">
+                </div>
+                <input type="number"class="relative right-12" id="quantity" name="quantity" min="1" max="10">
+              </div>
+              <div class="exapt text-right">
+                <h4 class="pb-8 text-lg font-bold">تكتب فيما يلي  الاقسام التي لا تفوج</h4>
+                <div class="flex flex-row-reverse gap-6 ">
+                  <span class="details">:لا تفوج الاقسام التالية</span>
+                  <input class="input_expt" type="text" placeholder= "  إجابتك"  required>
+                </div>
+            </form>
+              </div>
+          </div>
+        </section>
+        <!------------------section 4----------------------->
+        <section id="section4">
+          <hr class="border-green-300 my-12">
+          <h2 class="font-sans font-bold  text-right px-2 pb-8 text-2xl">الاسناد</h2>
+          <div class="p-8 mt-6  ml-8 lg:mt-0 rounded shadow  bg-white">
+            <forom class="my-10 mx-10  grid gap-y-10 grid-rows-2 relative form4">
+            <div class="flex flex-row-reverse gap-9">
+              <span class="details">:عدد الحجرات</span>
+              <div class="container bottom-2 relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box5" id="box5">
+                  <span>0</span>
+                </div>
+              </div>
+              <span class="details">:عدد المخابر</span>
+              <div class="container bottom-2 relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box5" id="box6">
+                  <span>0</span>
+                </div>
+              </div>
+              <span class="details">:عدد الورشات</span>
+              <div class="container bottom-2 relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box5" id="box7">
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row-reverse gap-9">
+              <span class="details">:عدد مخابر الاعلام الالي</span>
+              <div class="container bottom-2 relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box5" id="box8">
+                  <span>0</span>
+                </div>
+              </div>
+              <span class="details">:عدد الملاعب</span>
+              <div class="container bottom-2 relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box5" id="box9">
+                  <span>0</span>
+                </div>
+              </div>
+              <span class="details">:عدد قاعات الموسيقى</span>
+              <div class="container bottom-2 relative w-20 h-10">
+                <span class="next" onclick="nextNum()"></span>
+                <span class="prev" onclick="prevNum()"></span>
+                <div class="box5" id="box10">
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+            </form>
+          </div>
+        </section>
+      </section>  
+      <script src="script.js"></script>
+  </body>
+</html>
